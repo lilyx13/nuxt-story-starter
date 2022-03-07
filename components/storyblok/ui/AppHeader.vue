@@ -5,11 +5,14 @@
   </header>
 </template>
 <script>
-export default {
+import { defineComponent } from '@nuxtjs/composition-api'
+export default defineComponent({
   props: {
     title: {
       type: String,
-      default: 'Default Header'
+      default() {
+        return 'Default Header'
+      }
     }
   },
   setup() {
@@ -19,5 +22,5 @@ export default {
       description
     }
   }
-}
+})
 </script>
