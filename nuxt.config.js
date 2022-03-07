@@ -24,11 +24,7 @@ export default {
   plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: [
-    '~/components',
-    '~/components/storyblok',
-    '~/components/storyblok/ui'
-  ],
+  components: ['~/components'],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -38,7 +34,8 @@ export default {
       {
         accessToken: process.env.STORYBLOK_API_KEY
       }
-    ]
+    ],
+    'nuxt-webpack-optimisations'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
