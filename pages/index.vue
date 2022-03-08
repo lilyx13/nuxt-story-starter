@@ -1,18 +1,8 @@
 <template>
-  <div>
+  <main>
     <AppHeader />
-    <section>
-      <h2>Page Content</h2>
-      <p>This section is directly on the index.vue file</p>
-      <p>Ashlyn Knox</p>
-    </section>
-  </div>
+    <h1>The Index Page</h1>
+  </main>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
-
-export default defineComponent({
-  name: 'IndexPage'
-})
-</script>
+<script setup></script>
