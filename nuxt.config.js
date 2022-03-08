@@ -29,13 +29,16 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/composition-api/module',
+    '@nuxtjs/google-fonts',
     'nuxt-webpack-optimisations'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxt/image',
+    
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -43,6 +46,14 @@ export default {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/'
   },
+  googleFonts: {
+    families: {
+      Roboto: true,
+      'Josefin+Sans': true,
+      Lato: [100, 300]
+    }
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
 }
