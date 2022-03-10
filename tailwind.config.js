@@ -10,7 +10,6 @@ module.exports = {
     './nuxt.config.{js,ts}'
   ],
   presets: [],
-  darkMode: 'media', // or 'class'
   theme: {
     screens: {
       sm: '640px',
